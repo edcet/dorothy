@@ -666,13 +666,13 @@ function dorothy_() (
 	# relocate and recreate symlink
 	function relocate_then_symlink_if_necessary {
 		local symlink="$1" destination="$2"
-		
+
 		# Skip if symlink and destination are the same path
-		if [[ "$symlink" == "$destination" ]]; then
+		if [[ $symlink == "$destination" ]]; then
 			echo "Skipping symlink creation: source and destination are identical ($symlink)" >&2
 			return 0
 		fi
-		
+
 		relocate_if_necessary "$symlink" "$destination"
 		if __is_alpine; then
 			# alpine doesn't support -F, however the removals of relocate_if_necessary should make it unnecessary
