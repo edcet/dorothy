@@ -2,6 +2,7 @@
 
 function is_shapeshifter_test() (
 	source "$DOROTHY/sources/bash.bash"
+	source "$DOROTHY/sources/ansi.bash"
 
 	local inputs=() inputs_no_shapeshifters=() outputs=() output item
 
