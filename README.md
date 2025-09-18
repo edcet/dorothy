@@ -1,19 +1,7 @@
 # Dorothy
 
 <!-- BADGES/ -->
-
-<span class="badge-githubworkflow"><a href="https://github.com/bevry/dorothy/actions?query=workflow%3Adorothy-workflow" title="View the status of this project's GitHub Workflow: dorothy-workflow"><img src="https://github.com/bevry/dorothy/workflows/dorothy-workflow/badge.svg" alt="Status of the GitHub Workflow: dorothy-workflow" /></a></span>
-<br class="badge-separator" />
-<span class="badge-githubsponsors"><a href="https://github.com/sponsors/balupton" title="Donate to this project using GitHub Sponsors"><img src="https://img.shields.io/badge/github-donate-yellow.svg" alt="GitHub Sponsors donate button" /></a></span>
-<span class="badge-thanksdev"><a href="https://thanks.dev/u/gh/bevry" title="Donate to this project using ThanksDev"><img src="https://img.shields.io/badge/thanksdev-donate-yellow.svg" alt="ThanksDev donate button" /></a></span>
-<span class="badge-liberapay"><a href="https://liberapay.com/bevry" title="Donate to this project using Liberapay"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg" alt="Liberapay donate button" /></a></span>
-<span class="badge-buymeacoffee"><a href="https://buymeacoffee.com/balupton" title="Donate to this project using Buy Me A Coffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee donate button" /></a></span>
-<span class="badge-opencollective"><a href="https://opencollective.com/bevry" title="Donate to this project using Open Collective"><img src="https://img.shields.io/badge/open%20collective-donate-yellow.svg" alt="Open Collective donate button" /></a></span>
-<span class="badge-crypto"><a href="https://bevry.me/crypto" title="Donate to this project using Cryptocurrency"><img src="https://img.shields.io/badge/crypto-donate-yellow.svg" alt="crypto donate button" /></a></span>
-<span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
-<br class="badge-separator" />
-<span class="badge-discord"><a href="https://discord.gg/nQuXddV7VP" title="Join this project's community on Discord"><img src="https://img.shields.io/discord/1147436445783560193?logo=discord&amp;label=discord" alt="Discord server badge" /></a></span>
-<span class="badge-twitch"><a href="https://www.twitch.tv/balupton" title="Join this project's community on Twitch"><img src="https://img.shields.io/twitch/status/balupton?logo=twitch" alt="Twitch community badge" /></a></span>
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/edcet/dorothy)
 
 <!-- /BADGES -->
 
@@ -30,58 +18,6 @@ Dorothy is a dotfile ecosystem featuring:
 - 🦸‍♀️ all this together, allows you to go from zero to hero within minutes, instead of days, on a brand new machine
 
 ## Introduction
-
-[Watch the 2023 November Presentation to see what Dorothy can do!](https://youtu.be/EdoN9rQ2S4w)
-
-[![Screenshot of the 2022 April Presentation](https://github.com/bevry/dorothy/blob/master/docs/assets/presentation.gif?raw=true)](https://youtu.be/EdoN9rQ2S4w)
-
-## Setup
-
-### Supported Platforms
-
-| Operating System                                  | Architecture                                   | Support                  |
-| ------------------------------------------------- | ---------------------------------------------- | ------------------------ |
-| 🍏 macOS                                          | 🍏 Apple Silicon (ARM64)                       | 👌 Daily Driver          |
-| 🍏 macOS                                          | 🍏 Apple on Intel (x86_64)                     | 👌 Daily Driver, 🤖 CI   |
-| 🍏 macOS                                          | 🍏 Apple Silicon with `HOMEBREW_ARCH="x86_64"` | 🌗 Monthly Driver        |
-| 🪟 Windows 10/11 [WSL2][WSL2] [Ubuntu][UWSL]      | 👔 Intel/AMD (x86_64)                          | 👌 Daily Driver          |
-| 🍓 [Raspberry Pi OS with Desktop][RPIOS]          | 🍓 Raspberry Pi 4/400/5 (ARM64)                | 👌 Daily Driver          |
-| 🍓 [Raspberry Pi OS Lite][RPIOS]                  | 🍓 Raspberry Pi 4/400/5 (ARM64)                | 🌗 Monthly Driver        |
-| ⭕️ [Ubuntu Desktop][URPI]                         | 🍓 Raspberry Pi 4/400/5 (ARM64)                | 👌 Daily Driver          |
-| ⭕️ [Ubuntu Desktop][UD]                           | 👔 Intel/AMD (x86_64)                          | 👌 Daily Driver          |
-| ⭕️ [Ubuntu Server][URPI]                          | 🍓 Raspberry Pi 4/400/5 (ARM64)                | 👌 Daily Driver          |
-| ⭕️ [Ubuntu Server][US]                            | 👔 Intel/AMD (x86_64)                          | 👌 Daily Driver, 🤖 CI   |
-| ꩜ [Debian][D]                                     | 🍓 Raspberry Pi 4/400/5 (ARM64)                | 🌗 Monthly Driver        |
-| ꩜ [Debian][D]                                     | 👔 Intel/AMD (x86_64)                          | 👌 Daily Driver, 🤖 CI   |
-| ▲ [Manjaro][M] / [Arch][A]                        | 👔 Intel/AMD (x86_64)                          | 👌 Daily Driver          |
-| ∞ [Fedora Workstation][FW]                        | 👔 Intel/AMD (x84_64)                          | 🌗 Monthly Driver, 🤖 CI |
-| 🦎 [OpenSUSE][OS] [Leap][OSL] & [Tumbleweed][OST] | 👔 Intel/AMD (x84_64)                          | 🌗 Monthly Driver, 🤖 CI |
-| 🐉 [Kali][K]                                      | 👔 Intel/AMD (x84_64)                          | 🌗 Monthly Driver, 🤖 CI |
-
-<!--
-| ⭕️ [Ubuntu Server][UV5]                           | 5️⃣ StarFive’s VisionFive (RISC-V)              | 🌗 Monthly Driver        |
-| ⛰ [Alpine][AL]                                   | 👔 Intel/AMD (x84_64)                          | 🌗 Monthly Driver, 🤖 CI |
-| ⛰ [Alpine][AL]                                   | 🍏 Apple Silicon (ARM64)                       | 🌗 Monthly Driver        |
-[UV5]: https://ubuntu.com/blog/canonical-enables-ubuntu-on-starfives-visionfive-risc-v-boards
-[AL]: https://www.alpinelinux.org/downloads/
--->
-
-[WSL2]: https://docs.microsoft.com/en-au/windows/wsl/
-[UWSL]: https://ubuntu.com/wsl
-[RPIOS]: https://www.raspberrypi.com/software/operating-systems/
-[URPI]: https://ubuntu.com/download/raspberry-pi
-[UD]: https://ubuntu.com/download/desktop
-[US]: https://ubuntu.com/download/server
-[D]: https://www.debian.org
-[M]: https://manjaro.org/download/
-[A]: https://wiki.archlinux.org/title/Installation_guide
-[FW]: https://fedoraproject.org/workstation/
-[OS]: https://www.opensuse.org
-[OSL]: https://get.opensuse.org/leap/
-[OST]: https://get.opensuse.org/tumbleweed/
-[K]: https://www.kali.org/get-kali/#kali-platforms
-
-Table reflects usage by Dorothy users and Dorothy CI support. Other platforms may or may not be supported. [Mageia, Nix, Gentoo are unsupported.](https://github.com/bevry/dorothy/issues/162)
 
 ### Dependencies
 
